@@ -6,14 +6,17 @@
 #    based off their size
 
 
+import constants
+
+
 def main():
     # this function calculates the cost of the pizza
 
     # input
-    radius = int(input("Enter the radius of the pizza (in): "))
+    diameter = int(input("Enter the diameter of the pizza (in): "))
 
     # process
-    cost = 0.75 + 1.00 + radius
+    cost = (0.75 + 1.00 + diameter * 0.50) * constants.HST
 
     # output
     print("\nThe cost of your pizza is ${0}.".format(cost))
